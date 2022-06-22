@@ -20,6 +20,7 @@ export class FilmService{
   constructor(private http: HttpClient) { }
 
   incluirCatalogo(film : Film) : Observable<any> {
+    console.log("cadastrarrr")
     return this.http.post(this.URL + '/cadastrar', film)
   }
 

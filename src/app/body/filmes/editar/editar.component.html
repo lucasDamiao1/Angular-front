@@ -1,0 +1,26 @@
+<div class="auth-container">
+  <h2>Editar</h2>
+  <form action="" method="POST">
+    <div class="form-control">
+      <label for="name">Filme/Série</label>
+      <input type="text" name="name" placeholder="Nome do filme/série:" [(ngModel)]="film.title">
+    </div>
+    <div class="form-control">
+      <label for="imagem">Imagem</label>
+      <input type="text" name="imagem" placeholder="Url da imagem:" [(ngModel)]="film.url">
+    </div>
+    <div class="form-control">
+      <label for="imagem">Gênero</label>
+      <input type="text" name="genero" placeholder="Qual é o genêro? " [(ngModel)]="film.genero">
+    </div>
+    <div class="form-control">
+      <label for="confirmpassword">Descrição</label>
+      <input type="text" name="descricao" placeholder="Descrição:" [(ngModel)]="film.description">
+    </div>
+    <input class="edit" type="submit" value="Salvar" (click)="saveFilm()">
+    <button class="btn" routerLink="/listfilmes">
+      Cancelar
+    </button>
+    <input class="ex" type="submit" value="Excluir" (click)="removeFilms(film.id)">
+  </form>
+</div>

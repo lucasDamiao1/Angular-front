@@ -1,0 +1,4 @@
+.container {
+  min-height: 72vh;
+  /* Isso faz com que o footer sempre fique no fim da pagina */
+}

@@ -1,0 +1,17 @@
+<main class="main">
+  <div class="newPost">
+    <div class="infoUser">
+      <div class="imgUser"></div>
+      <strong>Passar nome usario</strong>
+    </div>
+    <form action="/" method="POST" class="formPost">
+      <input class="addImg" type="text" name="addImg" placeholder="O que gostaria de adicionar uma imagem?"
+        [(ngModel)]="catalogo.url" required>
+      <input class="descricao" type="text" name="textarea" placeholder="O que gostaria de compartilhar hoje?"
+        [(ngModel)]="catalogo.description" required>
+      <div class="iconsAndButton">
+        <input type="submit" class="btn" value="Publicar" (click)="incluir()">
+      </div>
+    </form>
+  </div>
+</main>

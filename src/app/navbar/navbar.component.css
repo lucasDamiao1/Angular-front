@@ -1,0 +1,97 @@
+.nav {
+  padding: 1.5em 1.4em;
+  /* 1.2 superior e inferior, 1.4 nas laterias. Centraliza melhor o conteudo  */
+  /* Afastar os conteudos que vierem embaixo da navbar  */
+  display: flex;
+  /* Condicionar os itens um do lado do outro*/
+  justify-content: space-between;
+  /* Separar cada item para seu lado*/
+  align-items: center;
+  /*Centralizar na horizontal */
+  background-color: #23A0FF;
+}
+
+.icon {
+  font-size: 3em;
+  color: rgb(243, 33, 33);
+}
+
+.nav span {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2em;
+  background: -webkit-linear-gradient(-90deg,
+      #f7f5f5, #ece6e6, #fff6f6, #f3e9e9,
+      #fcebeb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: texto 5s steps(110, end) alternate infinite;
+  white-space: nowrap;
+  border-right: 5px solid transparent;
+  cursor: pointer;
+}
+
+@keyframes texto {
+  0% {
+    width: 0;
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: transparent;
+  }
+
+  100% {
+    width: 100%;
+    border-color: transparent;
+  }
+}
+
+.nav ul {
+  display: flex;
+  /* Condicionar os itens um do lado do outro*/
+  list-style: none;
+  /* Retira o style de lista*/
+}
+
+.nav ul li {
+  margin-left: 1em;
+  /* Espaçar os itens um dos outros*/
+}
+
+.nav ul li a {
+  text-decoration: none;
+  /* Espaçar os itens um dos outros*/
+  transition: 0.5s;
+  font-weight: bold;
+  /*Negrito*/
+  color: #ffff;
+}
+
+.nav ul li a:hover {
+  color: #2e19ee;
+}
+
+
+
+
+/* DAQUI PARA BAIXO É SIDENAV */
+
+/* .example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 20px;
+} */
+
+
+.sidenav {
+  width: 200px;
+  height: 100%;
+  margin: 10px;
+  border: 1px solid #555;
+}

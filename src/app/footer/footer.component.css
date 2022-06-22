@@ -1,0 +1,22 @@
+footer {
+  background-color: #23A0FF;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  /* Centralizar com flexbox */
+  align-items: center;
+
+}
+
+footer span {
+  font-weight: bold;
+  /* Destaque */
+  color: #FFF;
+}
+
+
+footer p {
+  font-weight: bold;
+  /* Destaque */
+  color: #FFF;
+}
